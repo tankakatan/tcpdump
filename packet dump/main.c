@@ -6,10 +6,11 @@
 //  Copyright © 2017 Denis. All rights reserved.
 //
 
+
 #include <stdio.h>
+#include "watcher.h"
+
 
 int main(int argc, const char * argv[]) {
-  // insert code here...
-  printf("Hello, World!\n");
-    return 0;
+    return listen_bpf ();
 }
