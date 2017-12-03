@@ -70,11 +70,12 @@ int listen_bpf () {
       errors++;
     
     } else {
-      perror("unable to read from bpf\n");
+      perror ("unable to read from bpf\n");
       break;
     }
   }
   
+  close (bpf);
   return 0;
 }
 
